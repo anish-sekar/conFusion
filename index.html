@@ -78,22 +78,27 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col col-md align-self-center"><img src="img/logo.png" class="img-fluid"></div>
+          <div class="col-12 col-md-3 align-self-center"><img src="img/logo.png" class="img-fluid"></div>
+          <div class="col col-md align-self-center">
+
+            <button class="btn btn-sm bg-warning" href="#tabledCard">Reserve Table</button>
+
+            </div>
         </div>
       </div>
     </header>
 
     <div class="container">
       <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-3 col-md-3">
+        <div class="col-12 col-sm-3 col-md-3 order-sm-first order-md-last">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
-        <div class="col col-sm col-md">
+        <div class="col col-sm col-md order-sm-last order-md-first">
           <media class="media">
             <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
             <div class="media-body">
-            <h2 class="mt-0">Uthappizza</h2>
-            <p>
+            <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">4.99$</span></h2>
+            <p class="d-none d-sm-block">
               A unique combination of Indian Uthappam (pancake) and Italian pizza,
               topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia
               onion, Guntur chillies and Buffalo Paneer.
@@ -109,13 +114,20 @@
           <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p>
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+          <media class="media">
+            <div class="media-body">
+              <h2>Weekend Grand Buffet</h2>
+              <p class="d-none d-sm-block">
+                Featuring mouthwatering combinations with a choice of five different
+                salads, six enticing appetizers, six main entrees and five choicest
+                desserts. Free flowing bubbly and soft drinks. All for just $19.99
+                per person
+              </p>
+            </div>
+            <image class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png"></image>
+
+          </media>
+         
         </div>
       </div>
 
@@ -129,7 +141,7 @@
             <div class="media-body">
             <h2>Alberto Somayya</h2>
             <h4>Executive Chef</h4>
-            <p>
+            <p class="d-none d-sm-block">
               Award winning three-star Michelin chef with wide International
               experience having worked closely with whos-who in the culinary
               world, he specializes in creating mouthwatering Indo-Italian fusion
@@ -140,6 +152,71 @@
 
         </div>
       </div>
+
+      <div class="row row-content align-items-center">
+        <div class="col-12 col-md-8 offset-md-2">
+        <div id="tabledCard" class="card">
+
+          <div  class="card-header bg-warning"><h2 class="text-white"><strong></strong>Reserve a Table</strong></h2></div>
+
+          <div class="card-body">
+
+            <div class="form-group row">
+              <label for="firstname" class="col-md-2 col-form-label">Number of Guests</label>
+              <div class="pl-3">
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio">1
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio">2
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" disabled>3
+                </label>
+              </div> 
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" disabled>4
+                </label>
+              </div> 
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" disabled>5
+                </label>
+              </div> 
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optradio" disabled>6
+                </label>
+              </div> 
+            </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="firstname" class="col-md-2 col-form-label">Date and Time</label>
+              <div class="col-12 col-md-3"><input type="text" class="form-control" id="firstName" name="firstName" placeholder="John">
+              </div>
+              <div class="col-12 col-md-3"><input type="text" class="form-control" id="firstName" name="firstName" placeholder="John">
+            </div>
+
+            </div>
+
+            <div class="form-group row">
+              <div class="col-6 col-md-4 offset-md-2"><button class="btn bg-primary text-white">Reserve</button> </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+
+
     </div>
 
     <footer class="footer">
